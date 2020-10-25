@@ -1,3 +1,39 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Ambisonics Examples
+    </title>
+    <script src="https://www.gstatic.com/external_hosted/omnitone/build/omnitone.min.js"></script>
+    <script>
+      // `Omnitone` object is loaded and ready.
+      var audioContext = new AudioContext();
+      var foaRenderer = Omnitone.createFOARenderer(audioContext);
+      // Set up an audio element to feed the ambisonic source audio feed.
+      const audioElement = document.createElement('audio');
+      audioElement.src = 'https://doc-04-80-docs.googleusercontent.com/docs/securesc/norq3ec8b7muc926ch9tc2dak2jh1ai0/8bdgvaqe830u4qvjvjhusc509656o3rf/1603639350000/03809847169922757420/03809847169922757420/1_MEuyW0PqByrgRUuWtbZxb8J0FWZDpF8?e=download&authuser=0&nonce=na9cngvat7uh2&user=03809847169922757420&hash=n6vntq9u00bqs983ajt1i4chac4tv24p';
+
+      // Create AudioContext, MediaElementSourceNode and FOARenderer.
+      const audioContext = new AudioContext();
+      const audioElementSource = audioContext.createMediaElementSource(audioElement);
+      const foaRenderer = Omnitone.createFOARenderer(audioContext);
+
+      // Make connection and start play. Hook up the user input for the playback.
+      foaRenderer.initialize().then(function() {
+        audioElementSource.connect(foaRenderer.input);
+        foaRenderer.output.connect(audioContext.destination);
+
+        // This is necessary to activate audio playback out of autoplay block.
+        someButton.onclick = () => {
+          audioContext.resume();
+          audioElement.play();
+        };
+      });
+      // Works exactly the same way with FOARenderer. See the usage above.
+      //var hoaRenderer = Omnitone.createHOARenderer(audioContext);
+    </script>
+  </head>
+  <body>
+  </body>
 </html>
