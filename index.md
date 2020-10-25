@@ -16,6 +16,7 @@ Aufgenommen werden sie mit Mikrofonen, deren Acht-Charakteristik in der entsprec
 
 ![equation](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20P_%7Bn%7D%3DW%2BX%2F%28%7B%5Csqrt%20%7B2%7D%7D%5Ccos%20%5Ctheta%20_%7Bn%7D%29%2BY%2F%28%7B%5Csqrt%20%7B2%7D%7D%5Csin%20%5Ctheta%20_%7Bn%7D%29%5C%2C%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
+
 Die virtuellen Positionen der Schallquelle können aber nicht nur mit dem Soundfield-Mikrofon aufgenommen werden, ein Ambisonics-Coder kann das Monosignal an frei wählbaren Positionen im dreidimensionalen Schallfeld darstellen.
 
 ## Vorteile des Verfahrens
