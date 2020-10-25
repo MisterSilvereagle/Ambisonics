@@ -25,6 +25,7 @@
         foaRenderer.output.connect(audioContext.destination);
 
         // This is necessary to activate audio playback out of autoplay block.
+        someButton = document.getElementById('Button')
         someButton.onclick = () => {
           audioContext.resume();
           audioElement.play();
@@ -35,5 +36,8 @@
     </script>
   </head>
   <body>
+    <p id="Button">
+      Knopf
+    </p>
   </body>
 </html>
