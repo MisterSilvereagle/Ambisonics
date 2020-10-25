@@ -1,9 +1,9 @@
 ## Ambisonics
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Ambisonics** (auch Ambisonic) ist ein Verfahren zur Aufnahme und Wiedergabe eines Klangfeldes. Diese Audiotechnologie wurde in den 1960er und 1970er Jahren in [Großbritannien](https://de.wikipedia.org/wiki/Vereinigtes_K%C3%B6nigreich) entwickelt und im Wesentlichen von [Michael A. Gerzon](https://de.wikipedia.org/wiki/Michael_Gerzon) und [Peter Fellgett](https://de.wikipedia.org/wiki/Peter_Fellgett) vorangetrieben. Im Unterschied zu den kanalorientierten Übertragungsverfahren ist für die Wiedergabe **keine feste Anzahl von Lautsprechern vorgegeben**. Die jeweiligen Signale werden nach mathematischen Vorgaben aus den übertragenen Werten für Schalldruck- und Schallschnelle für jede einzelne Lautsprecherposition berechnet.
+
+**Ambisonics** (auch Ambisonic) ist ein Verfahren zur Aufnahme und Wiedergabe eines Klangfeldes. Diese Audiotechnologie wurde in den 1960er und 1970er Jahren in [Großbritannien](https://de.wikipedia.org/wiki/Vereinigtes_K%C3%B6nigreich) entwickelt und im Wesentlichen von [Michael A. Gerzon](https://de.wikipedia.org/wiki/Michael_Gerzon) und [Peter Fellgett](https://de.wikipedia.org/wiki/Peter_Fellgett) vorangetrieben. Im Unterschied zu den kanalorientierten Übertragungsverfahren ist für die Wiedergabe keine feste Anzahl von Lautsprechern vorgegeben. Die jeweiligen Signale werden nach mathematischen Vorgaben aus den übertragenen Werten für Schalldruck- und Schallschnelle für jede einzelne Lautsprecherposition berechnet.
 
 # Physikalisches Prinzip
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 In der Basisversion, bekannt als *First Order Ambisonics B-Format*, wird die Information in den Kanälen W, X, Y und Z übertragen. Dabei enthält W die reine [Schalldruckkomponente](https://de.wikipedia.org/wiki/Schalldruck), aufgenommen mit einem ungerichteten (Kugel)-Mikrofon. Die Signale X, Y und Z sind die [Druckgradientenkomponenten](https://de.wikipedia.org/wiki/Druckgradientenmikrophon) in den zugehörigen Raumachsen.
 
 ![equation](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20W%3D1%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
@@ -19,7 +19,7 @@ Aufgenommen werden sie mit Mikrofonen, deren Acht-Charakteristik in der entsprec
 Die virtuellen Positionen der Schallquelle können aber nicht nur mit dem Soundfield-Mikrofon aufgenommen werden, ein Ambisonics-Coder kann das Monosignal an frei wählbaren Positionen im dreidimensionalen Schallfeld darstellen.
 
 # Vorteile des Verfahrens
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Ein Vorteil des Verfahrens ist, dass auch die Elevationsebene nach mathematischen Beziehungen für jede beliebige Lautsprecherposition dekodiert werden kann. Dadurch wird schon mit vier Übertragungskanälen ein dreidimensionales Schallfeld erzeugt. In diesem Schallfeld ist keine Raumachse bevorzugt, alle Lautsprecher tragen ihren Anteil bei. Herkömmliche Raumklang-Verfahren sind selbst bei sechs Übertragungskanälen noch zweidimensional.
 
 Mit steigender Zahl der dekodierten Lautsprecherkanäle gewinnt das Schallfeld an Stabilität. Es kann dann sogar von Zuhörern außerhalb der Lautsprecheranordnung wahrgenommen werden. Die Lautsprecher müssen nicht an fest vorgegebenen Positionen in einem regulären Rechteck positioniert werden. Das erlaubt eine bessere Anpassung an die praktischen Wiedergabebedingungen.
@@ -29,12 +29,12 @@ Mit zusätzlichen Übertragungskanälen kann die Stabilität der räumlichen Abb
 Aufzeichnungen im Ambisonics-G-Format sind auf herkömmlichen Raumklang-Anlagen abspielbar. Der Dekoder wird dabei aufnahmeseitig in den Übertragungsweg geschaltet. Dabei wird eine Dekodierung auf die Standardpositionen üblicher Raumklang-Lautsprecher in Wohnräumen dekodiert. Die Vorzüge des Verfahrens werden dabei nur eingeschränkt genutzt. Zunehmend soll sich dieses Verfahren im Aufnahmebereich auch bei konventionellen Produktionen für eine verbesserte Raumabbildung durchsetzen.
 
 # Verbleibende Probleme
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Der Durchbruch des Verfahrens konnte bisher nicht gelingen; Ambisonics ist heute weitgehend unbekannt.
 
 In größeren Wiedergaberäumen sind vier Lautsprecher in der Azimutebene für eine stabile Wiedergabe nicht ausreichend. Beim Zuhörer muss ein relativ hoher Direktschallanteil eintreffen, damit die Vorzüge des Verfahrens erkannt werden können.
 
 # Forschung und Marktreife
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Obwohl die meisten Patente auf das Verfahren inzwischen ausgelaufen sind, ist die Weiterentwicklung des Ansatzes weiterhin Gegenstand der Forschung.
 Dabei werden vor allem die High Order Ambisonics (HOA)-Verfahren zu größerer Perfektion weiterentwickelt. Inzwischen sind diese Dekoder auf Softwarebasis implementierbar. Wie auch das verwandte Verfahren der Wellenfeldsynthese WFS, so hat Ambisonics möglicherweise Aussichten, die konventionellen kanalgebundenen Prozeduren abzulösen. Bis heute blieb jedoch der kommerzielle Erfolg des Systems aus.
