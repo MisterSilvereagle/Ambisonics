@@ -6,15 +6,15 @@
 
 In der Basisversion, bekannt als *First Order Ambisonics B-Format*, wird die Information in den Kanälen W, X, Y und Z übertragen. Dabei enthält W die reine [Schalldruckkomponente](https://de.wikipedia.org/wiki/Schalldruck), aufgenommen mit einem ungerichteten (Kugel)-Mikrofon. Die Signale X, Y und Z sind die [Druckgradientenkomponenten](https://de.wikipedia.org/wiki/Druckgradientenmikrophon) in den zugehörigen Raumachsen.
 
-![equation](https://latex.codecogs.com/gif.latex?\large&space;{\displaystyle&space;W=1})
+![equation](http://latex.codecogs.com/gif.latex?\large&space;{\displaystyle&space;W=1})
 
-![equation](https://latex.codecogs.com/gif.latex?\large&space;{\displaystyle&space;X={\sqrt&space;{2}}\cos&space;\phi&space;})
+![equation](http://latex.codecogs.com/gif.latex?\large&space;{\displaystyle&space;X={\sqrt&space;{2}}\cos&space;\phi&space;})
 
-![equation](https://latex.codecogs.com/gif.latex?\large&space;{\displaystyle&space;Y={\sqrt&space;{2}}\sin&space;\phi&space;})
+![equation](http://latex.codecogs.com/gif.latex?\large&space;{\displaystyle&space;Y={\sqrt&space;{2}}\sin&space;\phi&space;})
 
 Aufgenommen werden sie mit Mikrofonen, deren Acht-Charakteristik in der entsprechenden Achse ausgerichtet ist. Das Verfahren zielt darauf ab, beim Zuhörer aus diesen Signalen an seinem Abhörplatz wieder den aufgezeichneten Schalldruck mit dem zugehörigen Vektor der Schallschnelle zu rekonstruieren. Für eine rechteckige Lautsprecheranordnung in der horizontalen Ebene werden die einzelnen Lautsprechersignale aus den Winkeln zur Mittelachse abgeleitet:
 
-![equation](https://latex.codecogs.com/gif.latex?\large&space;{\displaystyle&space;P_{n}=W&plus;X/({\sqrt&space;{2}}\cos&space;\theta&space;_{n})&plus;Y/({\sqrt&space;{2}}\sin&space;\theta&space;_{n})\,})
+![equation](http://latex.codecogs.com/gif.latex?\large&space;{\displaystyle&space;P_{n}=W&plus;X/({\sqrt&space;{2}}\cos&space;\theta&space;_{n})&plus;Y/({\sqrt&space;{2}}\sin&space;\theta&space;_{n})\,})
 
 Die virtuellen Positionen der Schallquelle können aber nicht nur mit dem Soundfield-Mikrofon aufgenommen werden, ein Ambisonics-Coder kann das Monosignal an frei wählbaren Positionen im dreidimensionalen Schallfeld darstellen.
 
